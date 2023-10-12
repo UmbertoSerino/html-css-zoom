@@ -5,6 +5,12 @@
     box-sizing: border-box;
 }
 
+body{
+    color: white;
+    font-family: 'Lato', sans-serif;
+
+}
+
 .flex{
     display: flex;
     justify-content: center;
@@ -20,14 +26,15 @@ main.container{
 }
 
 main > section.flex{
-    margin-top: 6rem;
+    margin-top: 4.5rem;
 }
 
 section.micro-screen{
-    height: 120px;
+    height: 130px;
     width: calc((100% / 7) - 2rem);
     margin: 0.5rem 0.3rem;
     background-image: url(https://fastly.picsum.photos/id/237/232/152.jpg?hmac=weaVwcUBvn_twlyjNFdUw28NafF69yRCy8RCIbFJjxw);
+    background-repeat: no-repeat;
 }
 
 main section.micro-screen.p-relative{
@@ -36,28 +43,24 @@ main section.micro-screen.p-relative{
 
 section.p-relative div{
     position: absolute;
-    bottom: 0;
+    bottom: .1rem;
 }
 
 div.container-info{
-    height: 20px;
+    height: 30px;
     width: 120px;
-    color: white;
     background-color: rgba(0, 0, 0, .5);
     font-size: 1rem;
-    font-family: 'Lato', sans-serif;
     text-align: center;
 }
 
-i{
+main i{
     font-size: 15px;
-    color: white;
 }
 
 main > div.p-absolute{
     position: absolute;
     right: 0;
-    color: white;
     text-align: center; 
     border-radius: 5px;
     display: flex;
@@ -88,25 +91,52 @@ span.button-top-right{
     /* Header */
 
 header.container {
-    height: 100px;
+    height: 88px;
     width: 100%;
-    background-color: gray;
+    background-color: rgb(39, 39, 39);
+    position: fixed;
+    bottom: 0;
 }
-
 
 .flex-header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: fixed;
-    
+    height: 100%
 }
 
-/* header div.container-icons{
-    height: 100%;
+header div i{
+    font-size: 25px;
+    padding: .3rem;
+}
+
+header div span{
+    display: block; 
     text-align: center;
 }
 
-header i.icon{
-    font-size: 50px;
-} */
+i.icon-optional{
+    font-size: 13px;
+    margin-left: .5rem;
+}
+
+.icon-special{
+    color: greenyellow;
+}
+
+header div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 1rem;
+}
+
+header button.button-end-meeting{
+    background-color: rgb(75, 70, 70);
+    color:red;
+    height: calc(100% - .5rem);
+    margin-bottom: .5rem;
+    width: 130px;
+    border: none;
+}
