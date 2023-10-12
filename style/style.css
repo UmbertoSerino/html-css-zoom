@@ -85,3 +85,28 @@ span.button-top-right{
     width: 25px;
     padding-top: 3px;
 }
+    /* Header */
+
+header.container {
+    height: 100px;
+    width: 100%;
+    background-color: gray;
+}
+
+
+.flex-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    
+}
+
+/* header div.container-icons{
+    height: 100%;
+    text-align: center;
+}
+
+header i.icon{
+    font-size: 50px;
+} */
